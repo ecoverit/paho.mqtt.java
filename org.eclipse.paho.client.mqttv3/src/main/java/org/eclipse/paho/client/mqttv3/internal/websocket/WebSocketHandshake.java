@@ -174,7 +174,7 @@ public class WebSocketHandshake {
 	 */
 	private Map getHeaders(ArrayList headers){
 		Map headerMap = new HashMap();
-		for(int i = 1; i < headers.size(); i++){
+		for(int i = 0; i < headers.size(); i++){
 			String headerPre = (String) headers.get(i);
 			String[] header =  headerPre.split(":");
 			headerMap.put(header[0].toLowerCase(), header[1]);
